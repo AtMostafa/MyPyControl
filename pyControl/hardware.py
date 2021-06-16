@@ -496,4 +496,3 @@ class Rsync(IO_object):
             fw.timer.set(self.pulse_dur, fw.hardw_typ, self.ID)
             fw.data_output_queue.put((fw.current_time, fw.event_typ, self.event_ID))
         self.state = not self.state
-        self.sync_pin.value(self.state)
